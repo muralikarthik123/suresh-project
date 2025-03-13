@@ -1,0 +1,381 @@
+/* Styling for the header container */
+.bg header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 55px;
+  z-index: 1000;
+  background-color: #FFFFFF;
+  box-shadow: 0px 0px 5px black;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding: 10px;
+}
+
+/* Logo image styling */
+.Logo_img {
+  flex-direction: column;
+  gap: 10px;
+}
+
+.Logo_img img {
+  width: 80px;
+  height: 50px;
+  margin-left:-120px;
+  margin-top: -5px;
+  filter: brightness(100%);
+}
+
+.Logo_img p {
+  margin-top: -10px;
+  margin-left: -60px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 15px;
+  font-weight: bold;
+  background: linear-gradient(to right, #ff5733 20%, #07629a 30%, #33ff57 70%, #ff33a1 80%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-size: 500% auto;
+  animation: textShine 5s ease-in-out infinite alternate;
+}
+
+@keyframes textShine {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 100% 50%;
+  }
+}
+
+.Search_Main {
+  margin-top: -10px;
+}
+
+.Search_Button1 {
+  box-shadow: 0px 5px 20px red;
+  width: 350px;
+  margin: 15px;
+  display: flex;
+  align-items: center;
+}
+
+.Searchbar {
+  padding: 6px;
+  height: 30px;
+  flex: 1;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-right: 0px;
+  font-size: 17px;
+  padding-left: 10px;
+}
+
+.sch {
+  background-color: #eb4d5e;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 45px;
+  padding: 6.5px;
+  height: 30px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin-top: -0.3px;
+}
+
+.Search_button {
+  color: white;
+  font-size: 25px;
+}
+
+.Search_button:hover {
+  background-color: #d63d4c;
+}
+
+.mobile-menu-toggle {
+  display: none;
+  cursor: pointer;
+  font-size: 24px;
+}
+
+
+/* Navigation bar */
+.bg header nav {
+  cursor: pointer;
+  color: #07629a;
+}
+
+/* Navigation list styling */
+.bg header nav ul {
+  display: flex;
+  list-style-type: none;
+  text-decoration: none;
+  gap: 2rem;
+  color: #07629a;
+  margin: 0;
+  padding: 0;
+}
+
+/* List items in the navigation */
+.bg header nav ul li {
+  padding: 1rem;
+  position: relative;
+  font-size: 18px;
+  text-decoration: none;
+  font-weight: 600;
+  font-family: "Regular", sans-serif;
+  color: #a82f41;
+}
+
+/* Anchor link styling */
+.bg header nav ul li a {
+  text-decoration: none; /* Remove underline */
+  color: #a82f41; /* Set text color */
+  font-weight: bold; /* Make it bold */
+  padding: 10px 15px; /* Add some padding */
+  border: 1px solid transparent; /* Add border */
+  border-radius: 5px; /* Rounded corners */
+  transition: background-color 0.3s, color 0.3s; /* Smooth transition */
+}
+
+/* Hover effect on list items */
+.bg header nav ul li:hover a {
+  color: #eb4d5e;
+}
+
+/* Highlight the first list item */
+.bg header nav ul li:nth-child(1) a {
+  color: #eb4d5e;
+}
+
+/* Dropdown menu styling */
+.bg header nav ul li .dropdown {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #FCFCFC;
+  border-radius: 8px;
+  text-align: center;
+  width: 15vw;
+  padding: 5px;
+  box-shadow: 0px 4px 6px #77777736, 0px 4px 6px #77777761;
+}
+
+/* Items in the dropdown menu */
+.bg header nav ul li .dropdown .list {
+  font-size: 15px;
+  padding: 10px;
+  text-align: start;
+  font-family: "Regular", sans-serif;
+  color: black;
+}
+
+/* Hover effect for dropdown items */
+.bg header nav ul li .dropdown .list:hover {
+  background-color: #FFFFFF;
+  color: #eb4d5e;
+  border-radius: 3px;
+}
+
+/* Display the dropdown when hovering over the parent */
+.bg header nav ul li:hover .dropdown {
+  display: inline-block;
+  transition: 0.3s ease-in; 
+  background-color: whitesmoke;
+}
+
+/* Styling for the main content */
+.bg main {
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  overflow-y: auto;
+  background-attachment: fixed;
+}
+
+
+
+/* Accessibility focus styles */
+.Search_Button1:focus, .bg header nav ul li:focus {
+  outline: 2px solid #eb4d5e;
+}
+
+/* Button hover scale effect */
+.Search_Button1:hover, .bg header nav ul li:hover {
+  transform: scale(1.05);
+}
+
+
+.swal-custom-title {
+  color: #dc143c; /* Change this color to any desired color code */
+  font-size: 24px; /* Adjust the size as needed */
+  font-family: Arial, sans-serif; /* Customize the font family if desired */
+}
+
+
+
+
+
+
+
+
+/* For tablets (max-width: 768px) */
+@media screen and (min-width: 320px) and (max-width: 768px) {
+
+
+
+
+.bg header {
+  height:50px;
+  padding: 10px;
+  justify-content: space-between;
+}
+
+.Logo_img img {
+  width: 70px;
+  margin-left:-40px;
+}
+
+.Logo_img p {
+  font-size: 0.85rem;
+  padding-left: 60px;
+  margin-top:-10px;
+}
+
+.Search_Main {
+  margin-top: -80px;
+  margin-left: 100px;
+ 
+}
+.Search_Button1 {
+  box-shadow: none;
+  width: 200px;
+  margin: 15px;
+  display: flex;
+  align-items: center;
+  border-radius: 25px;
+  
+}
+
+.Searchbar {
+  border: 2px solid black;
+  
+  padding: 6px;
+  height: 30px;
+  width: 100px;
+  flex: 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-right: 0px;
+  font-size: 17px;
+  padding-left: 10px;
+  border-top-left-radius: 25px;
+  border-bottom-left-radius: 25px;
+
+  &:hover{
+    flex: 5;
+  }
+}
+
+.sch {
+  background-color: #eb4d5e;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 45px;
+  padding: 6.5px;
+  height: 30px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin-top: -0.3px;
+  border-top-right-radius: 25px;
+  border-bottom-right-radius: 25px;
+}
+
+.Search_button {
+  color: white;
+  font-size: 25px;
+}
+
+.Search_button:hover {
+  background-color: #d63d4c;
+}
+
+.mobile-menu-toggle {
+  display: block;
+  position: absolute;
+  right: 20px;
+  top: 15px;
+  z-index: 1000;
+}
+
+.mobile-menu-toggle .menu{
+  font-size: 30px;
+  color: #eb4d5e;
+  margin-left: -3rem;
+  margin-top: 10px;
+}
+.mobile-menu-toggle .crossx {
+  font-size: 20px;
+  color: #eb4d5e;
+  margin-left: -3rem;
+  margin-top: 10px;
+}
+
+.bg header nav {
+  display: none;
+}
+
+.bg header nav.mobile-nav-open {
+  display: block;
+  position: absolute;
+  top:70px;
+  left: 0%;
+  width: 100%;
+  height:600px;
+  background-color:#0e4970;
+  z-index: 999;
+  justify-content: center;
+  color: white;
+  align-items: center;
+  
+}
+
+.bg header nav ul {
+  flex-direction: column;
+  padding: 20px 0;
+  color: white;
+  top: 100px;
+ 
+}
+
+.bg header nav ul li {
+  font-size: 17px;
+  padding: 10px 20px;
+  color: rgb(242, 13, 13);
+  text-align: center;
+  justify-content: center;  align-items: center;
+top: 100px;
+}
+
+.bg header nav ul li .dropdown {
+    width: 100%;
+    
+ position: relative;
+
+}
+
+.bg header nav ul li .dropdown .list {
+  text-align: center;
+padding: 10px;
+top: -5px;
+line-height: 1;
+
+}
+
+}

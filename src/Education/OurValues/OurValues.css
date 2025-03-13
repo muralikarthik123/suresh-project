@@ -1,0 +1,550 @@
+/* all alignments Strting*/
+
+.Our_Values {
+    background-image: url('../../../public/Our_Values.jpg');
+    background-size: cover; /* Make the background image cover the entire element */
+    background-position: center; /* Center the background image */
+    height:1000px; /* Set a height for the section */
+    display: flex; /* Use flexbox for alignment */
+    align-items: center; /* Center items vertically */
+    justify-content: center; /* Center items horizontally */
+    color: white; /* Text color for better contrast */
+    text-align: center; /* Center text */
+    padding: 20px; /* Optional padding */
+display: flex;
+flex-direction: column;
+
+
+.Our_Values1{
+
+display: flex;
+flex-direction: column;
+float: left;
+padding: 20px;
+
+
+h1{
+    position: relative; /* Position relative for the pseudo-element */
+    float: left;
+    text-align: left;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    font-size:25px;
+    margin-left: -350px;
+    background: linear-gradient(
+        to right,
+        #33d6ff 20%,
+        #f7f8f9 30%,
+        #587b5f 70%,
+        #ff33a1 80%
+    );
+    -webkit-background-clip: text; /* For Safari */
+    background-clip: text; /* For other browsers */
+    -webkit-text-fill-color: transparent; /* For Safari */
+    background-size: 50% auto; /* Size of the background gradient */
+    animation: textShine 5s ease-in-out infinite alternate; /* Animation */
+}
+
+h1::after {
+    content: ''; /* Empty content for the pseudo-element */
+    position: absolute; /* Absolute positioning */
+    left: 0;
+    right: 0;
+    bottom:0;
+    top:35px; /* Position it below the text */
+    height:2px; /* Height of the underline */
+    width:130px;
+    background: linear-gradient(
+        to right,
+        #ff5733 20%,
+        #f8f8f8 30%,
+        #33ff57 70%,
+        #ff33a1 80%
+    ); /* Same gradient as the text */
+    animation: underlineShine 5s ease-in-out infinite alternate; /* Animation for underline */
+}
+
+
+@keyframes underlineShine {
+    0% {
+        background-position: 0% 0;
+    }
+    100% {
+        background-position: 100% 0;
+    }
+}
+
+@keyframes textShine {
+    0% {
+        background-position: 0% 0;
+    }
+    100% {
+        background-position: 100% 0;
+    }
+}
+
+
+
+p{
+    position: relative; /* Position relative for the pseudo-element */
+    float: left;
+    text-align: left;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    font-size:30px;
+    margin-left: -350px;
+    background: linear-gradient(
+        to right,
+        #e5b0a4 20%,
+        #6999b7 30%,
+        #f9faf9 70%,
+        #c24f6e 80%
+    );
+    -webkit-background-clip: text; /* For Safari */
+    background-clip: text; /* For other browsers */
+    -webkit-text-fill-color: transparent; /* For Safari */
+    background-size: 50% auto; /* Size of the background gradient */
+    animation: textShine 5s ease-in-out infinite alternate; /* Animation */ 
+}
+
+
+
+
+@keyframes underlineShine {
+    0% {
+        background-position: 0% 0;
+    }
+    100% {
+        background-position: 100% 0;
+    }
+}
+
+
+
+h6{
+    position: relative; /* Position relative for the pseudo-element */
+    float: left;
+    text-align: left;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    font-size:15px;
+    margin-left: -350px;
+  line-height: 2;
+}
+
+
+
+}
+
+
+.Our_Values2{
+   
+display: flex;
+float: left;
+padding: 20px;
+gap:150px;
+margin-left: -380px;
+
+.Our_Values2_1{
+    background-color: white;
+    padding: 10px;
+    height:120px;
+    width:130px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 13px rgb(0, 119, 255);
+    transition: transform 0.3s ease;
+
+    &:hover {
+        transform: scale(1.05);
+    }
+
+h1{
+    color: rgb(0, 145, 255);
+    font-size:28px;
+    padding-top: -10px;
+    height: 50px;
+    span{
+  color: #6999b7;
+  font-size:12px;
+  font-weight: bold;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+}
+
+
+}
+
+
+.Our_Values2_1H{
+    background-color: white;
+    padding: 10px;
+    height:120px;
+    width:130px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 13px rgb(0, 119, 255);
+    transition: transform 0.3s ease;
+
+    &:hover {
+        transform: scale(1.05);
+    }
+
+h1{
+    color: rgb(255, 0, 140);
+    font-size:28px;
+    padding-top: -10px;
+    height: 50px;
+    span{
+  color: #6999b7;
+  font-size:12px;
+  font-weight: bold;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+}
+}
+
+
+.Our_Values2_1C{
+    background-color: white;
+    padding: 10px;
+    height:120px;
+    width:130px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 13px rgb(0, 119, 255);
+    transition: transform 0.3s ease;
+
+    &:hover {
+        transform: scale(1.05);
+    }
+    
+
+h1{
+    color: rgb(80, 94, 13);
+    font-size:28px;
+    padding-top: -10px;
+    height: 50px;
+    span{
+  color: #6999b7;
+  font-size:12px;
+  font-weight: bold;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+}
+}
+
+
+.Our_Values2_2{
+
+    display: flex;
+    flex-direction: column;
+   
+
+h1{
+    position: relative; /* Position relative for the pseudo-element */
+    float: left;
+    text-align: left;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    font-size:30px;
+    margin-left:0px;
+    background: linear-gradient(
+        to right,
+        #33d6ff 20%,
+        #f7f8f9 30%,
+        #587b5f 70%,
+        #ff33a1 80%
+    );
+    -webkit-background-clip: text; /* For Safari */
+    background-clip: text; /* For other browsers */
+    -webkit-text-fill-color: transparent; /* For Safari */
+    background-size: 50% auto; /* Size of the background gradient */
+    animation: textShine 5s ease-in-out infinite alternate; /* Animation */  
+}
+
+
+p{
+    text-align: justify;
+    line-height: 2;
+}
+
+
+}
+
+
+
+
+}
+
+
+
+}
+
+
+
+/* ALL Responsive Mobile View Code In Css code */
+
+@media (max-width: 576px) {
+  
+
+    /* 1. General Section Adjustments */
+    .Our_Values {
+        background-image: url('../../../public/Our_Values.jpg');
+        background-size: cover;
+        background-position: center;
+        height:auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        text-align: center;
+        padding: 20px;
+        width: 100%;
+        margin: 0;
+    }
+
+    /* 2. Container for Headings and Paragraphs */
+    .Our_Values1 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 10px;
+        width: 100%;
+        margin-left: 100px;
+        margin-top: -30px;
+    }
+
+    /* 3. Heading Adjustments */
+    .Our_Values1 h1 {
+        position: relative;
+        text-align: center;
+        font-weight: bold;
+        font-family: Arial, Helvetica, sans-serif;
+        color: white;
+        padding-top: -30px;
+        font-size:15px !important;
+      padding-left: 200px;
+        background: linear-gradient(
+            to right,
+            #33d6ff 20%,
+            #f7f8f9 30%,
+            #587b5f 70%,
+            #ff33a1 80%
+        );
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-size: 100% auto;
+        animation: textShine 5s ease-in-out infinite alternate;
+    }
+
+    /* 4. Underline Effect for Heading */
+    .Our_Values1 h1::after {
+        content: '';
+        position: absolute;
+        left:50%;
+        margin-left: 300px;
+        display: none;
+        transform: translateX(-50%);
+        bottom:0px;
+        top: 30px;
+        height: 2px;
+        width: 100px;
+        background: linear-gradient(
+            to right,
+            #ff5733 20%,
+            #f8f8f8 30%,
+            #33ff57 70%,
+            #ff33a1 80%
+        );
+        animation: underlineShine 5s ease-in-out infinite alternate;
+    }
+
+    /* 5. Paragraph Adjustments */
+    .Our_Values1 p {
+        font-weight: bold;
+        font-family: Arial, Helvetica, sans-serif;
+        color: rgb(179, 21, 21);
+        font-size: 15px !important;
+        width: 100%;
+        max-width:350px;
+        text-align: center;
+        margin: 10px 0;
+        padding-left:250px;
+        line-height: 1.6;
+        background: linear-gradient(
+            to right,
+            #e5b0a4 20%,
+            #6999b7 30%,
+            #f9faf9 70%,
+            #c24f6e 80%
+        );
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-size: 100% auto;
+        animation: textShine 5s ease-in-out infinite alternate;
+    }
+
+    /* 6. Subheading Adjustments */
+    .Our_Values1 h6 {
+        position: relative;
+        text-align:justify;
+        font-weight: bold;
+        font-family: Arial, Helvetica, sans-serif;
+        color: white;
+        font-size: 10px;
+        width:340px;
+        margin: 15px 0;
+        padding-left:230px;
+        line-height: 1.8;
+    }
+
+    /* 7. Value Boxes Container */
+    .Our_Values2 {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        padding: 10px;
+        margin: 20px 0;
+        width: 100%;
+        margin-left: 300px;
+    }
+
+    /* 8. Individual Value Boxes */
+    .Our_Values2_1,
+    .Our_Values2_1H,
+    .Our_Values2_1C {
+        background-color: white;
+        padding:0px;
+        margin: 5px;
+        width: 100%;
+        height: 80px;
+        max-width: 250px;
+        border-radius: 8px;
+        box-shadow: 0px 0px 10px rgba(0, 119, 255, 0.5);
+        transition: transform 0.3s ease;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        margin-left:350px;
+        display: none;
+    }
+
+    /* 9. Hover Effect for Value Boxes */
+    .Our_Values2_1:hover,
+    .Our_Values2_1H:hover,
+    .Our_Values2_1C:hover {
+        transform: scale(1.05);
+    }
+
+    /* 10. Heading Inside Value Boxes */
+    .Our_Values2_1 h1,
+    .Our_Values2_1H h1,
+    .Our_Values2_1C h1 {
+        font-size: 20px;
+        margin: 10px 0 5px 0;
+        height: auto;
+        
+    }
+
+    /* 11. Specific Colors for Headings */
+    .Our_Values2_1 h1 {
+        color: rgb(0, 145, 255);
+    }
+
+    .Our_Values2_1H h1 {
+        color: rgb(255, 0, 140);
+        padding-left:0px;
+    }
+
+    .Our_Values2_1C h1 {
+        color: rgb(80, 94, 13);
+    }
+
+    /* 12. Span Elements Inside Value Boxes */
+    .Our_Values2_1 span,
+    .Our_Values2_1H span,
+    .Our_Values2_1C span {
+        color: #6eb769 !important;
+        font-size: 10px !important;
+        font-weight: bold;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        padding-left:100px;
+       
+       
+    }
+
+    /* 13. Description Section */
+    .Our_Values2_2 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 10px;
+        width: 100%;
+        margin: 20px 0;
+    }
+
+    /* 14. Heading in Description Section */
+    .Our_Values2_2 h1 {
+        position: relative;
+        text-align: center;
+        font-weight: bold;
+        font-family: Arial, Helvetica, sans-serif;
+        color: white;
+        font-size:20px !important;
+        margin: 20px 0;
+        padding-left:340px;
+        width: 300px;
+        line-height:1.5;
+        background: linear-gradient(
+            to right,
+            #33d6ff 20%,
+            #f7f8f9 30%,
+            #587b5f 70%,
+            #ff33a1 80%
+        );
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-size: 100% auto;
+        animation: textShine 5s ease-in-out infinite alternate;
+    }
+
+    /* 15. Paragraph in Description Section */
+    .Our_Values2_2 p {
+        text-align: justify;
+        line-height: 1.8;
+        font-size: 14px;
+        padding: 0 10px;
+        width: 300px;
+        padding-left:350px;
+    }
+
+    /* 16. Keyframes for Animations */
+    @keyframes underlineShine {
+        0% {
+            background-position: 0% 0;
+        }
+        100% {
+            background-position: 100% 0;
+        }
+    }
+
+    @keyframes textShine {
+        0% {
+            background-position: 0% 0;
+        }
+        100% {
+            background-position: 100% 0;
+        }
+    }
+}

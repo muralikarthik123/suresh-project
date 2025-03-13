@@ -1,0 +1,243 @@
+/* Card container */
+.card {
+    width: 300px;
+    border-radius: 10px;
+    overflow: hidden;
+    font-family: Arial, sans-serif;
+    z-index: 1;
+    position: sticky; /* Added position */
+    margin-top: -200px;
+    filter: brightness(130%);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+
+&:hover {
+    transform: scale(1.05);
+}
+
+}
+
+
+.main_card{
+    display: flex;
+    gap: 50px;
+    justify-content: center;
+    box-shadow: 0 4px 20px red;
+}
+/* Card Header Image */
+.card-header {
+    width: 100%;
+}
+
+.card-image {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    filter: brightness(130%);
+}
+
+/* Card Body */
+.card-body {
+    padding: 16px;
+}
+
+/* Title */
+.card-title {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+/* Rating section */
+.card-rating {
+    display: flex;
+    align-items: center;
+    margin-bottom: 12px;
+}
+
+.card-rating span {
+    font-size: 20px;
+    color: #ff076a;
+    margin-right: 5px;
+}
+
+.rating-count {
+    color: #666;
+    font-size: 14px;
+}
+
+/* Card details */
+.card-details p {
+    font-size: 14px;
+    color: #333;
+    margin: 6px 0;
+}
+
+.card-details i {
+    margin-right: 6px;
+    color: #555;
+}
+
+/* Actions section */
+.card-actions {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 16px;
+}
+
+.enroll-btn,
+.share-btn {
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.enroll-btn {
+    background-color: #f51949;
+    color: #fff;
+}
+
+.share-btn {
+    background-color: #f8f9fa;
+    color: #ff0048;
+    border: 1px solid #ff003c;
+}
+
+.enroll-btn:hover,
+.share-btn:hover {
+    opacity: 0.9;
+}
+
+
+/* All Mobile View Responsive In this Section */
+
+
+@media(max-width:768px) {
+
+    .card {
+        width: 100%;
+        max-width: 300px;
+        border-radius: 10px;
+        overflow: hidden;
+        font-family: Arial, sans-serif;
+        z-index: 1;
+        position: relative;
+        margin: 0 auto 20px auto;
+        filter: brightness(120%);
+      box-shadow: none;
+        transition: transform 0.3s ease;
+      
+    
+    &:hover {
+        transform: scale(1.05);
+    }
+    
+    }
+    
+    
+    .main_card{
+        display: block;
+        margin: 0 auto;
+        gap: 30px;
+        justify-content: center;
+        align-items: center;
+        box-shadow:0px 0px 5px black;
+    }
+    /* Card Header Image */
+    .card-header {
+        width: 100%;
+    }
+    
+    .card-image {
+        width: 100%;
+        height: 180px;
+        filter: brightness(130%);
+        background-position: center;
+        background-size: cover !important;
+        object-fit: fill !important;
+        box-shadow:0px 0px 5px black;
+    }
+    
+    /* Card Body */
+    .card-body {
+        padding: 12px;
+        margin-top: -30px;
+        box-shadow:0px 0px 5px black;
+        border: 1px solid rgb(0, 204, 255);
+    }
+    
+    /* Title */
+    .card-title {
+        font-size: 18px;
+        font-weight: bold;
+        margin-bottom: 8px;
+    }
+    
+    /* Rating section */
+    .card-rating {
+        display: flex;
+        align-items: center;
+        margin-bottom: 12px;
+    }
+    
+    .card-rating span {
+        font-size: 20px;
+        color: #ff076a;
+        margin-right: 5px;
+    }
+    
+    .rating-count {
+        color: #666;
+        font-size: 14px;
+    }
+    
+    /* Card details */
+    .card-details p {
+        font-size: 14px;
+        color: #333;
+        margin: 6px 0;
+        text-align: justify;
+    }
+    
+    .card-details i {
+        margin-right: 6px;
+        color: #555;
+    }
+    
+    /* Actions section */
+    .card-actions {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 16px;
+    }
+    
+    .enroll-btn,
+    .share-btn {
+        border: none;
+        padding: 10px 15px;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 14px;
+    }
+    
+    .enroll-btn {
+        background-color: #f51949;
+        color: #fff;
+    }
+    
+    .share-btn {
+        background-color: #f8f9fa;
+        color: #ff0048;
+        border: 1px solid #ff003c;
+    }
+    
+    .enroll-btn:hover,
+    .share-btn:hover {
+        opacity: 0.9;
+    }
+    
+    
+
+}

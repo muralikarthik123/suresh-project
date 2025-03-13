@@ -1,0 +1,328 @@
+/* General Section Styles */
+.about-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+    background-color: #f8f9fa;
+
+
+
+    .text-section {
+        flex: 1;
+        padding-right: 20px;
+
+        .about-heading {
+            font-size: 24px;
+            font-weight: bold;
+            color: hsl(343, 74%, 39%);
+            position: relative;
+            display: inline-block;
+            margin-bottom: 15px;
+            filter: brightness(120%);
+
+
+            .underline {
+                position: absolute;
+                bottom: -5px;
+                left: 0;
+                width:50px;
+                height: 4px;
+                background-color: #cc2e65; /* Use green underline */
+              }
+
+
+          }
+
+
+
+          .main-heading {
+            font-size: 36px;
+            font-weight: bold;
+            margin-bottom: 20px;
+            text-align: justify;
+            color: #444;
+            line-height: 1.5;
+          }
+
+          
+  
+  .description {
+    font-size: 17px;
+    color: #666;
+    line-height: 1.8;
+    text-align: justify;
+    margin-bottom: 40px;
+  }
+  .progress-bar {
+    margin-bottom: 20px;
+
+
+
+    .progress-label {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 5px;
+        font-size: 14px;
+        color: #555;
+      }
+
+      
+  .progress-track {
+    background-color: #e6e6e6;
+    border-radius: 20px;
+    overflow: hidden;
+    height: 10px;
+
+
+
+    .progress {
+        height: 100%;
+        background-color:red; /* Default progress bar color */
+        border-radius: 20px;
+        transition: width 0.3s ease;
+      }
+
+      
+  .progress1 {
+    height: 100%;
+    background-color:yellow; /* Default progress bar color */
+    border-radius: 20px;
+    transition: width 0.3s ease;
+  }
+  
+
+  
+  .progress2 {
+    height: 100%;
+    background-color:rgb(29, 161, 29); /* Default progress bar color */
+    border-radius: 20px;
+    transition: width 0.3s ease;
+  }
+  
+      
+
+  }
+
+  }
+
+  .read-more-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #e0365b;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .read-more-btn:hover {
+    background-color: #45a049;
+  }
+  
+      }
+
+
+
+      .image-section {
+        flex: 1;
+
+
+  
+        .background-image {
+            max-width:80%;
+            height:500px;
+            filter: brightness(120%);
+            box-shadow: 0px 5px 20px rgb(0, 183, 255);
+            border-radius: 50%;
+          }
+      }
+
+  }
+  
+
+
+/* All Mobile View Responsive Started */
+
+@media (max-width: 576px) {
+  .about-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:35px;
+    background-color: #f8f9fa;
+
+
+
+    .text-section {
+        flex: 1;
+        padding-right: 20px;
+
+        .about-heading {
+            font-size: 24px;
+            font-weight: bold;
+            text-align: center;
+            color: hsl(343, 74%, 39%);
+            position: relative;
+            display: inline-block;
+            margin-bottom: 15px;
+            filter: brightness(120%);
+
+
+            .underline {
+                position: absolute;
+                bottom: -5px;
+                left: 0;
+                width:50px;
+                height: 4px;
+                background-color: #cc2e65; /* Use green underline */
+              }
+
+
+          }
+
+
+
+          .main-heading {
+            font-size:16px;
+            font-weight: bold;
+            margin-bottom: 20px;
+            text-align: justify;
+            color: #444;
+            width: 300px;
+            line-height: 1.5;
+          }
+
+          
+  
+  .description {
+    font-size: 17px;
+    color: #666;
+    line-height: 1.8;
+    text-align: justify;
+    margin-bottom: 40px;
+  }
+  .progress-bar {
+    margin-bottom: 20px;
+
+
+
+    .progress-label {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 5px;
+        font-size: 14px;
+        color: #555;
+      }
+
+      
+  .progress-track {
+    background-color: #e6e6e6;
+    border-radius: 20px;
+    overflow: hidden;
+    height: 10px;
+
+
+
+    .progress {
+        height: 100%;
+        background-color:red; /* Default progress bar color */
+        border-radius: 20px;
+        transition: width 0.3s ease;
+      }
+
+      
+  .progress1 {
+    height: 100%;
+    background-color:yellow; /* Default progress bar color */
+    border-radius: 20px;
+    transition: width 0.3s ease;
+  }
+  
+
+  
+  .progress2 {
+    height: 100%;
+    background-color:rgb(29, 161, 29); /* Default progress bar color */
+    border-radius: 20px;
+    transition: width 0.3s ease;
+  }
+  
+      
+
+  }
+
+  }
+
+  .read-more-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #e0365b;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .read-more-btn:hover {
+    background-color: #45a049;
+  }
+  
+      }
+
+
+
+      .image-section {
+        flex: 1;
+
+
+  
+        .background-image {
+            max-width:80%;
+            height:500px;
+            filter: brightness(120%);
+            box-shadow: 0px 5px 20px rgb(0, 183, 255);
+            border-radius: 50%;
+            display: none;
+          }
+      }
+
+  }
+  
+
+
+}
+
+
+
+
+
+
+
+
+  
+  
+  /* Heading Styles */
+ 
+  
+  
+  
+  /* Progress Bar Styles */
+  
+  
+  
+  
+  .progress-track.yellow {
+    background-color: #ffeb3b;
+  }
+  
+  .progress-track.black {
+    background-color: #333;
+  }
+  
+  /* Button Styles */
+  

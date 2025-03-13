@@ -1,0 +1,65 @@
+.About_img {
+    background-image: url('../../../public/About1.jpg'); /* Path to the background image */
+    background-size: cover; /* Ensure the image covers the container */
+    background-position: center; /* Center the background image */
+    background-repeat: no-repeat; /* Prevent the image from repeating */
+    width: 100%; /* Full width of the container */
+    height: 400px; /* Set the height for the div */
+    display: flex; /* Use flexbox to center the content */
+    justify-content: center; /* Horizontally center the h1 */
+    align-items: center; /* Vertically center the h1 */
+    text-align: center; /* Center-align the text */
+    color: white; /* Ensure the text stands out on the background */
+    position: relative;
+    filter: brightness(120%);
+    margin-top:75px;
+  }
+  
+  .About_img h1 {
+    font-size: 48px; /* Adjust heading size */
+    filter: brightness(120%);
+    font-weight:500; /* Make the heading bold */
+    text-transform: uppercase; /* Optional: Make the text uppercase */
+    letter-spacing: 2px; /* Add some letter spacing */
+    background-color: rgba(0, 0, 0, 0.5); /* Optional: Add semi-transparent background for better readability */
+    padding: 10px 20px; /* Padding around the text */
+    border-radius: 8px; /* Optional: Rounded corners for the heading background */
+  }
+  
+
+  /* All Alignments Mobile View In this Section */
+
+
+  
+
+  /* Styles for small devices (max-width: 576px) */
+@media (max-width: 576px) {
+  .About_img {
+    background-image: url('../../../public/About1.jpg'); /* Path to the background image */
+    background-size: cover; /* Ensure the image covers the container */
+    background-position: center; /* Center the background image */
+    background-repeat: no-repeat; /* Prevent the image from repeating */
+    width: 100%; /* Full width of the container */
+    height: 50vh; /* Set height as 50% of viewport height for responsiveness */
+    display: flex; /* Use flexbox to center the content */
+    justify-content: center; /* Horizontally center the h1 */
+    align-items: center; /* Vertically center the h1 */
+    text-align: center; /* Center-align the text */
+    color: white; /* Ensure the text stands out on the background */
+    position: relative;
+    filter: brightness(120%);
+    margin-top: 75px;
+  }
+  
+  .About_img h1 {
+    font-size: 8vw; /* Use viewport units for more responsive font scaling */
+    font-weight: 500; /* Bold heading */
+    text-transform: uppercase; /* Make text uppercase */
+    letter-spacing: 2px; /* Add some letter spacing */
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background for text readability */
+    padding: 10px 20px; /* Padding around the text */
+    border-radius: 8px; /* Rounded corners for the heading background */
+    filter: brightness(120%);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8); /* Add shadow for better readability */
+  }
+}

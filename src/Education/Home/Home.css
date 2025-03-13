@@ -1,0 +1,272 @@
+.Home {
+   
+    overflow: hidden;
+   
+}
+
+.Carsols.Section {
+    width: 100%; 
+    margin: 0 auto; 
+    
+}
+
+
+
+
+.slick-slide {
+    display: flex; /* Align items in the center */
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
+.carousel-section img {
+ 
+   
+    background-repeat: no-repeat; /* Prevent the image from repeating */
+    width: 100%; /* Full width of the container */
+    height:450px; /* Set the height for the div */
+    color: white; /* Ensure the text stands out on the background */
+    position: relative; /* Allows for absolutely positioned elements inside */
+    filter: brightness(100%); /* Brighten the background image */
+    margin-top: 75px; /* Adds spacing above the div */
+   background-size: cover;
+   background-position: center;
+
+}
+
+.slick-dots {
+    bottom: 15px; /* Adjust position of dots if necessary */
+}
+
+.slick-prev, .slick-next {
+    z-index: 1; /* Make sure navigation arrows are above images */
+}
+
+/* Optional: Custom arrow style */
+.slick-prev:before, .slick-next:before {
+    color: black; /* Customize arrow color */
+}
+
+.car_img{
+
+    img {
+        background-repeat: no-repeat; /* Prevent the image from repeating */
+        width: 100%; /* Full width of the container */
+        height:450px; /* Set the height for the div */
+        color: white; /* Ensure the text stands out on the background */
+        position: relative; /* Allows for absolutely positioned elements inside */
+        filter: brightness(100%); /* Brighten the background image */
+        margin-top: 75px; /* Adds spacing above the div */
+       background-size: cover;
+       background-position: center;
+    }
+}
+
+
+
+
+/* our contact starting*/
+
+
+
+.Our_Contact{
+    background-color:#212529;
+    height:500px;
+    margin-top: 20px;
+    display: flex;
+   padding: 50px;
+gap: 100px;
+
+.Our_Contact1{
+    
+
+h1{
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    font-size:30px;
+    margin-left:0px;
+  text-align: left;
+    margin-top:50px;
+    background: linear-gradient(
+        to right,
+        #b84054 20%,
+        #07519b 30%,
+        #08b72b 70%,
+        #ff33a1 80%
+    );
+    -webkit-background-clip: text; /* For Safari */
+    background-clip: text; /* For other browsers */
+    -webkit-text-fill-color: transparent; /* For Safari */
+    background-size: 50% auto; /* Size of the background gradient */
+    animation: textShine 5s ease-in-out infinite alternate; /* Animation */
+}
+
+p{
+    text-align: justify;
+    color:white;
+    width:600px;
+    font-size: 20px;
+    line-height: 2;
+}
+
+button{
+    background-color: rgb(219, 46, 75);
+    color: #f4f5f6;
+    width: 200px;
+    height: 50px;
+    box-shadow: 0px 5px 20px rgb(20, 122, 170);
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    float: left;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+
+}
+
+.Our_Contact2{
+margin-top: -70px;
+    img{
+        width: 700px;
+        height: 500px;
+        filter: brightness(120%);
+        border: 1px solid wheat;
+    }
+}
+
+
+
+
+}
+
+
+
+/* All Responsove In Mobile View Code */
+@media (max-width: 576px) {
+    .Home {
+        text-align: center; /* Center text for mobile */
+        margin: 0 auto;
+        overflow: hidden;
+    }
+
+    .Carsols.Section {
+        width:100% !important; /* Full width for carousels */
+        
+        
+    }
+
+    .slick-slide {
+        display: flex; /* Center slide items */
+        justify-content: center;
+        align-items: center;
+    }
+
+    .carousel-section img {
+        width: 100%; /* Full width to occupy the available space */
+        height:100px !important; /* Automatic height to maintain aspect ratio */
+    max-height: 100px;
+    }
+
+    .slick-dots {
+        bottom: 15px; /* Position dots appropriately */
+    }
+
+    .slick-prev, .slick-next {
+        z-index: 1; /* Ensure arrows are above images */
+    }
+
+    .slick-prev:before, .slick-next:before {
+        color: black; /* Customize arrow color */
+    }
+
+    .car_img{
+
+        img {
+            width: 100%; /* Full width for images */
+            height:250px !important; /* Adjust height automatically */
+            margin-top:70px; /* Spacing from the top */
+            filter: brightness(100%);
+            background-position: center;
+            background-size: cover !important;
+            object-fit: fill !important;
+        }
+    }
+
+   
+
+    /* Our Contact Section */
+    .Our_Contact {
+        background-color: #212529; /* Dark background */
+        padding:10px; /* Padding for mobile */
+        display: flex; 
+        flex-direction: column; /* Stack items vertically */
+        gap: 20px; /* Space between elements */
+        height: 400px !important;
+    }
+
+    .Our_Contact1 {
+        h1 {
+            font-weight: bold;
+            font-family: Arial, Helvetica, sans-serif;
+            color: white; /* Text color */
+            font-size:20px !important; /* Adjust font size for mobile */
+            margin: 0; /* Remove default margin */
+            text-align: left; /* Align text to left */
+            margin-top: -30px !important;
+            background: linear-gradient(
+                to right,
+                #b84054 20%,
+                #07519b 30%,
+                #08b72b 70%,
+                #ff33a1 80%
+            );
+            -webkit-background-clip: text; /* For Safari */
+            background-clip: text; /* For other browsers */
+            -webkit-text-fill-color: transparent; /* For Safari */
+            background-size: 50% auto; /* Size of the gradient */
+            animation: textShine 5s ease-in-out infinite alternate; /* Animation effect */
+        }
+
+        p {
+            text-align: justify; /* Justify paragraph text */
+            color: white; /* Text color */
+            font-size: 15px !important; /* Font size adjustment */
+            line-height: 1.5; /* Line height for better readability */
+            width:250px !important;
+        }
+
+        button {
+            background-color: rgb(219, 46, 75); /* Button color */
+            color: #f4f5f6; /* Button text color */
+            width:50% !important; /* Full width for button */
+            height:40px !important; /* Fixed height for button */
+            box-shadow: 0px 5px 20px rgb(20, 122, 170); /* Shadow effect */
+            border-radius: 10px; /* Rounded corners */
+            border: none; /* Remove border */
+            cursor: pointer; /* Pointer cursor on hover */
+            font-size: 16px !important; /* Adjust font size */
+            font-weight: bold; /* Bold text */
+        }
+    }
+
+    .Our_Contact2 {
+        margin-top: -20px; /* Adjust margin for spacing */
+        
+        img {
+            width: 100%; /* Responsive width */
+            height: auto; /* Maintain aspect ratio */
+            filter: brightness(120%); /* Brightness filter */
+            border: 1px solid wheat; /* Border styling */
+            display: none;
+        }
+    }
+    .Build_Carrer{
+        display: none;
+    }
+}

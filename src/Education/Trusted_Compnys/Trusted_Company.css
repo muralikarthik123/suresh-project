@@ -1,0 +1,171 @@
+.trusted-companies {
+justify-content: center;
+    height: 400px;
+    background-color: #f9f9f9;
+    margin: 30px; /* Light background for contrast */
+
+
+    h2 {
+        font-weight: bold;
+        font-family: Arial, Helvetica, sans-serif;
+        color: white;
+        font-size:30px;
+        padding-top:60px;
+        margin-left:0px;
+        text-align: center;
+        margin-top:50px;
+        background: linear-gradient(
+            to right,
+            #f4042c 20%,
+            #07519b 30%,
+            #08b72b 70%,
+            #ff33a1 80%
+        );
+        -webkit-background-clip: text; /* For Safari */
+        background-clip: text; /* For other browsers */
+        -webkit-text-fill-color: transparent; /* For Safari */
+        background-size: 50% auto; /* Size of the background gradient */
+        animation: textShine 5s ease-in-out infinite alternate; /* Animation */
+    }
+
+
+
+    .marquee {
+        overflow: hidden; /* Ensures the content doesn't overflow */
+        position: relative;
+margin-top: 40px;
+
+        .companies-track {
+            display: flex; /* Use flexbox to align the company cards */
+            animation: marquee 10s linear infinite; /* Animation for scrolling effect */
+margin-top:50px;
+
+
+
+            .company-card {
+                margin: 0 15px; /* Spacing between cards */
+                display: flex;
+                
+                align-items: center; /* Center the image vertically within the card */
+                justify-content: center; /* Center the image horizontally within the card */
+                width:200px; /* Fixed width for each company card */
+                height: 100px; /* Fixed height for consistent appearance */
+                background-color: #fff; /* White background for contrast */
+                box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+                overflow: hidden; /* Ensures no overflow of content */
+                box-shadow: 0px 4px 5px rgb(220, 117, 117);
+                filter: brightness(120%);
+                cursor: pointer;
+            }
+
+
+        }
+
+    }
+
+}
+
+
+
+
+.company-card img {
+    max-width:70%; /* Ensure image fits within the card */
+    margin-top: -10px;
+    max-height: 100%; /* Ensure image does not exceed the card's height */
+    object-fit: contain; /* Maintain aspect ratio without cropping */
+}
+
+/* Animation keyframes */
+@keyframes marquee {
+    0% {
+        transform: translateX(100%); /* Start off the right side */
+    }
+    100% {
+        transform: translateX(-100%); /* End off the left side */
+    }
+}
+
+
+/*  All Mobile View Alignments Started In this code */
+
+@media (max-width: 576px) {
+  .trusted-companies {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height:250px !important;
+    background-color: #f9f9f9;
+    padding: 15px; /* Adjusted padding for smaller screens */
+    margin: 15px; /* Reduced margin for mobile view */
+    width: 300px !important;
+  }
+
+  .trusted-companies h2 {
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    font-size: 20px;
+    margin-top: -10px !important;
+    text-align: center;
+    margin-top: 40px;
+    background: linear-gradient(
+      to right,
+      #f4042c 20%,
+      #07519b 30%,
+      #08b72b 70%,
+      #ff33a1 80%
+    );
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 50% auto;
+    animation: textShine 5s ease-in-out infinite alternate;
+  }
+
+  .trusted-companies .marquee {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    margin-top:0px;
+  }
+
+  .trusted-companies .marquee .companies-track {
+    display: flex;
+    animation: marquee 15s linear infinite;
+    margin-top:30px;
+    gap: 10px !important;
+  }
+
+  .trusted-companies .marquee .companies-track .company-card {
+    margin: 0 1px;
+    width: 90vw;
+    max-width: 250px;
+    height: 30px !important;
+    background-color: #fff;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1); /* Slightly reduced shadow for mobile */
+    display: flex;
+    gap:30px !important;
+    justify-content: center;
+    align-items: center;
+    filter: brightness(120%);
+    cursor: pointer;
+  }
+
+  .trusted-companies .marquee .companies-track .company-card img {
+    max-width: 90% !important;
+    max-height: 50% !important;
+    object-fit: contain;
+  }
+
+  /* Animation keyframes */
+  @keyframes marquee {
+    0% {
+      transform: translateX(100%);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+
+  /* Assuming textShine keyframes are defined elsewhere */
+}

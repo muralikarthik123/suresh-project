@@ -1,0 +1,253 @@
+/*All Alignments Started In this section of the code */
+
+/* All Alignments Started in this section of the code */
+
+.PHP_Img {
+    background-image: url('../../../public/Php.jpg');
+   
+    background-repeat: no-repeat; /* Prevent the image from repeating */
+    width: 100%; /* Full width of the container */
+    height:450px; /* Set the height for the div */
+    color: white; /* Ensure the text stands out on the background */
+    position: relative; /* Allows for absolutely positioned elements inside */
+    filter: brightness(100%); /* Brighten the background image */
+    margin-top: 75px; /* Adds spacing above the div */
+   background-size: cover;
+   background-position: center;
+
+
+
+   h1{
+    color: rgb(251, 250, 250);
+    float: left;
+    padding-left:80px;
+    font-size:40px;
+    padding-top:150px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    margin-left:0px;
+    text-align: center;
+    margin-top:50px;
+    background: linear-gradient(
+        to right,
+        #f5f4f4 20%,
+        #07519b 30%,
+        #74a37d 70%,
+        #ff33a1 80%
+    );
+    -webkit-background-clip: text; /* For Safari */
+    background-clip: text; /* For other browsers */
+    -webkit-text-fill-color: transparent; /* For Safari */
+    background-size: 50% auto; /* Size of the background gradient */
+    animation: textShine 5s ease-in-out infinite alternate; /* Animation */
+   }
+    
+
+}
+
+
+
+
+
+
+.Php_Section {
+    padding: 20px; /* Add some padding */
+
+
+    .Php_Section1 {
+        max-width: 1200px; /* Limit the width on larger screens */
+        margin: auto; /* Center the section */
+
+
+
+        h1, h2 {
+            margin-bottom: 10px; /* Space below headings */
+            font-size:20px;
+            padding-top:30px;
+            font-weight: bold;
+            font-family: Arial, Helvetica, sans-serif;
+            color: white;
+            margin-left:0px;
+            text-align: left;
+            margin-top:50px;
+            background: linear-gradient(
+                to right,
+                #1447b5 20%,
+                #07519b 30%,
+                #74a37d 70%,
+                #ff33a1 80%
+            );
+            -webkit-background-clip: text; /* For Safari */
+            background-clip: text; /* For other browsers */
+            -webkit-text-fill-color: transparent; /* For Safari */
+            background-size: 50% auto; /* Size of the background gradient */
+            animation: textShine 5s ease-in-out infinite alternate; /* Animation */
+        }
+        
+p {
+    line-height: 1.6; 
+    text-align: justify;
+}
+
+
+/* Matking List Starting*/
+
+
+.marketing-list {
+    margin: 20px 0; /* Margin above and below the list */
+}
+
+.marketing-list1 {
+    list-style: none; /* Remove default list styling */
+    padding: 0; /* Remove default padding */
+}
+
+.seo-item {
+    margin-bottom: 15px; /* Space between list items */
+    font-size: 16px; /* Base font size */
+
+
+    p {
+        margin: 5px 0 0 0; /* Add margin above and remove default margin below */
+        font-size: 14px; /* Set a font size for the paragraph */
+        line-height: 1.5; /* Improve readability */
+        color: black;
+    }
+}
+
+.seo-title {
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.icon {
+    margin-right: 8px;
+    font-size:20px; /* Space between icon and text */
+}
+
+    }
+    .Benefit_Section {
+        padding: 20px;
+        background-color: #f9f9f9; /* Light background for contrast */
+        margin-top: 20px;
+        justify-content: center;
+      }
+      
+      .Benefits_1 h5 {
+        font-size: 24px;
+        font-weight: bold;
+        color: #2c60d0; /* Dark text color for better readability */
+        text-align: center;
+        margin-bottom: 15px;
+      }
+      
+      .Benefits_1 h4 {
+        font-size: 18px;
+        color: #555;
+        margin-bottom: 10px;
+        display: flex;
+       
+        
+        
+      }
+      
+      .icon {
+        margin-right: 10px;
+        color: #007bff; /* Icon color */
+      }
+      
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Mobile View Adjustments */
+@media (max-width: 768px) {
+    .Php_img {
+        height: 300px; /* Reduced height for mobile */
+        margin-top: 50px; /* Reduced margin for mobile */
+    }
+
+    .Php_img h1 {
+        float: none; /* Remove float for mobile view */
+        margin-right: -80px; /* Reduced padding for mobile view */
+        padding-top:180px; /* Adjust padding for mobile view */
+        font-size:18px; /* Reduced font size for mobile */
+        margin-top:20px; /* Adjust margin for mobile view */
+       text-align: left;
+    }
+
+    .Php_Section1 {
+        padding: 10px; /* Reduced padding for mobile */
+    }
+
+    h1, h2 {
+        margin-bottom: 10px; /* Space below headings */
+        font-size:19px;
+        padding-top:30px;
+        font-weight: bold;
+        font-family: Arial, Helvetica, sans-serif;
+        color: white;
+        margin-left:0px;
+        text-align: left;
+        margin-top:50px;
+        background: linear-gradient(
+            to right,
+            #1447b5 20%,
+            #07519b 30%,
+            #74a37d 70%,
+            #ff33a1 80%
+        );
+        -webkit-background-clip: text; /* For Safari */
+        background-clip: text; /* For other browsers */
+        -webkit-text-fill-color: transparent; /* For Safari */
+        background-size: 50% auto; /* Size of the background gradient */
+        animation: textShine 5s ease-in-out infinite alternate; /* Animation */
+    }
+
+    .Course_1, .Course_2 {
+        text-align: center; /* Center-align text */
+    }
+
+  
+.seo-item {
+    margin-bottom: 15px; /* Space between list items */
+    font-size: 16px; /* Base font size */
+display: flex;
+flex-direction: column;
+
+    p {
+        margin: 5px 0 0 0; /* Add margin above and remove default margin below */
+        font-size: 14px; /* Set a font size for the paragraph */
+        line-height: 1.5; /* Improve readability */
+    }
+}
+    
+    .seo-title {
+        font-size: 15px; /* Slightly smaller title font size for mobile */
+    }
+}
